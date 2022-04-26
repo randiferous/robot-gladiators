@@ -66,7 +66,7 @@ var fight = function (enemyName) {
 };
 
 // function to start a new game
-var startGame = function () {
+var startGame = function() {
     // fight each enemy-robot by looping over them and fighting them one at a time
     for (var i = 0; i < enemyNames.length; i++) {
         // if player is still alive, keep fighting
@@ -92,6 +92,8 @@ var startGame = function () {
             break;
         }
     }
+    // play again
+    startGame();
 }
 // start the game when the page loads
 startGame();
